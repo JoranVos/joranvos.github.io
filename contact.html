@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <div class="logo">
+                <a href="https://www.nhlstenden.com">
+                    <img src="img/stenden-logo.png" alt="stenden-logo" width="85">
+                </a>
+            </div>
+            <div class="nav-bar">
+                <li>
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="professionalskills.html">Professional skills</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="projects.html">Projecten</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </div>
+            <div class="info">
+                <p class="website-title">Portfolio Website</p>
+                <p>Joran Vos</p>
+            </div>
+        </div>
+        <div class="main">
+            <div class="contact-container">
+                <h1>Verzend een bericht</h1>
+                <h2 class="personal-mail">joran.vos@student.nhlstenden.com</h2>
+                <form action="contact.php" method="POST">
+                    <div class="form-row">
+                        <input type="text" name="name" id="name" placeholder="Naam">
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" name="message" id="message" placeholder="Bericht">
+                    </div>
+                    <button type="submit" id="submit-button">Verzend</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

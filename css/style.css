@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('font/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(241, 241, 241);
+    color: #185ba7;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 12fr 1fr;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 / 4;
+    padding-block: 6px;
+    padding-inline: 2em;
+    border-bottom: 2px solid;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 3ch;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #185ba7;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #185ba7;
+    transition: width 0.8s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info > p {
+    margin: 0;
+    text-align: center;
+}
+
+.website-title {
+    font-size: 1.5em;
+}
+
+.main {
+    grid-column: 2 / 3;
+    margin-top: 1em;
+}
+
+.home-container {
+    display: flex;
+    margin-top: 2em;
+    gap: 3em;
+    width: 65%;
+}
+
+.home-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.student-information > h2 {
+    margin-bottom: 0;
+}
+
+.student-information > h3 {
+    margin-top: 6px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.flex-item {
+    background-color: white;
+    border: 2px solid #185ba7;
+    width: 300px;
+    height: 195px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.flex-item > a > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.details {
+    width: 75%;
+}
+
+.details-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.toggle, .return {
+    background-color: #185ba7;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+#frame {
+    margin-top: 4em;
+}
+
+.hidden {
+    display: none;
+}
+
+.contact-container, form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personal-mail {
+    margin: 0;
+}
+
+form {
+    margin-block: 3em;
+}
+
+.form-row {
+    margin-bottom: 2em;
+    display: flex;
+    gap: 3ch;
+}
+
+#name, #email {
+    width: 235px;
+}
+
+#message {
+    width: 500px;
+}
+
+input {
+    background: transparent; 
+    border: none; 
+    border-bottom: 2px solid #185ba7;
+    outline: none;
+    color: #185ba7;
+    height: 4ch;
+}
+
+input::placeholder {
+    color: #185ba7; 
+    opacity: 1; 
+}
+
+#submit-button {
+    align-self: flex-end;
+    border: 2px solid #185ba7;
+    border-radius: 15px;
+    padding: 3px 10px;
+    color: #185ba7;
+    cursor: pointer;
+}
+
+.project-image {
+    border: 2px solid #185ba7;
+}
