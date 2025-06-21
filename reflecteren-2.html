@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflecteren</title>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <div class="logo">
+                <a href="https://www.nhlstenden.com">
+                    <img src="img/stenden-logo.png" alt="stenden-logo" width="85">
+                </a>
+            </div>
+            <div class="nav-bar">
+                <li>
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="professionalskills.html">Professional skills</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="projects.html">Projecten</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </div>
+            <div class="info">
+                <p class="website-title">Portfolio Website</p>
+                <p>Joran Vos</p>
+            </div>
+        </div>
+        <div class="main">
+            <div class="details">
+                <h1>Reflecteren</h1>
+                <p>
+                    Hieronder is het reflectieverslag te vinden. Het reflectieverslag gaat in op het gehele eerste jaar 
+                    van de studie.
+                </p>
+                <div class="details-buttons">
+                    <a class="toggle" onclick="showFile('files/reflectieverslag-tweede-semester.pdf')">Reflectieverslag</a>
+                    <a class="return" href="professionalskills.html">Ga terug</a>
+                </div>
+                <iframe id="frame" src="" width="100%" height="1000" class="hidden"></iframe>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showFile(file) {
+            const iframe = document.getElementById('frame');
+            iframe.src = file;
+            iframe.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
