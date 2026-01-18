@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Projectmanagement</title>
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
@@ -35,23 +35,25 @@
             </div>
         </div>
         <div class="main">
-            <div class="home-container">
-                <img src="img/foto.png" alt="foto" width="225">
-                <div class="home-description">
-                    <div class="student-information">
-                        <h2>Joran Vos</h2>
-                        <h3>5552443</h3>
-                    </div>
-                    <p>
-                        <i>
-                            "Student Informatica aan NHL Stenden te Emmen. Aan de hand van deze portfolio presenteer ik mijn 
-                            leerproces en vaardigheden. Hier vind je onder andere mijn projecten en opdrachten met betrekking 
-                            tot professionele vaardigheden. Blijf op de hoogte van mijn ontwikkeling in het eerste en tweede jaar."
-                        </i>
-                    </p>
+            <div class="details">
+                <h1>Projectmanagement</h1>
+                <p>
+                    Hieronder zijn de gevraagde scrumproducten te vinden.
+                </p>
+                <div class="details-buttons">
+                    <a class="toggle" onclick="showFile('files/scrumproducten.pdf')">Scrumproducten</a>
+                    <a class="return" href="professionalskills.html">Ga terug</a>
                 </div>
+                <iframe id="frame" src="" width="100%" height="1000" class="hidden"></iframe>
             </div>
         </div>
     </div>
+    <script>
+        function showFile(file) {
+            const iframe = document.getElementById('frame');
+            iframe.src = file;
+            iframe.classList.remove('hidden');
+        }
+    </script>
 </body>
 </html>
